@@ -21,6 +21,7 @@ import (
 // Output: 7
 // Explanation: Subarray with maximum sum is [3, 4].
 
+// O(n) time complexity, O(1) space complexity
 func MaxSumSubarraySizeK(k int, arr []int) int {
 	windowStart := 0
 	maxSum := math.MinInt
@@ -39,7 +40,7 @@ func MaxSumSubarraySizeK(k int, arr []int) int {
 	return maxSum
 }
 
-func TestExample1(t *testing.T) {
+func TestMaxSumSubarraySizeK_Example1(t *testing.T) {
 	const expected = 9
 	got := MaxSumSubarraySizeK(3, []int{2, 1, 5, 1, 3, 2})
 
@@ -48,7 +49,7 @@ func TestExample1(t *testing.T) {
 	}
 }
 
-func TestExample2(t *testing.T) {
+func TestMaxSumSubarraySizeK_Example2(t *testing.T) {
 	const expected = 7
 	got := MaxSumSubarraySizeK(2, []int{2, 3, 4, 1, 5})
 
