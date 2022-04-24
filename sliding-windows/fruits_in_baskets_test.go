@@ -27,6 +27,7 @@ import (
 	"github.com/BrimmingDev/grokking-the-coding-interview/common"
 )
 
+// O(n) time complexity where n is the length of fruits, O(1) space complexity due to maximum length being 3
 func FruitsIntoBaskets(fruits []string) int {
 	const maxKindOfFruit = 2
 	fruitsPicked := make(map[string]int)
