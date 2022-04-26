@@ -24,7 +24,7 @@ import (
 	"github.com/BrimmingDev/grokking-the-coding-interview/common"
 )
 
-// O(n) time complexity where n is the length of string, O(n) space complexity where size is the length of string
+// O(n) time complexity where n is the length of string, O(1) space complexity because there is at most 26 chars in the hash map
 func LongestDistinctSubstring(str string) int {
 	seen := make(map[string]int)
 	start := 0
